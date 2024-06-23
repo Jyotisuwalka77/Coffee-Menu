@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #4b3832;
+}
+
+a {
+    text-decoration: none;
+    color: #4b3832;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h3, h4, h5, p, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(227, 216, 216);
+    color: #6d4c41;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+}
+
+.navbar .items {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .items li a {
+    color: #6d4c41;
+    font-size: 1em;
+}
+
+.navbar .burger {
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+}
+
+/* Main page */
+.main-page {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url(https://www.shipbob.com/wp-content/uploads/2023/04/3c0cc0b0d691ad7fd7b47fe1bddeb836.jpg);
+    color: white;
+}
+
+.main-page .main_pg h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Types section */
+.types {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.types h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.types .type_p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #6d4c41;
+}
+
+/* Contact section */
+.contact_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact_sec form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_sec input, .contact_sec textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #4b3832;
+    background-color: #f5f5f5;
+}
+
+.contact_sec button.btn3 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d5524;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact_sec button.btn3:hover {
+    background-color: #c68642;
+}
+
+/* Footer section */
+.footer {
+    background-color: #8d5524;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Last footer section */
+.last_footer {
+    background-color: #845226;
+    color: white;
+    padding: 50px 20px;
+}
+
+.last_footer .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.last_footer .heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.last_footer .type_p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .items {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .burger {
+        display: block;
+    }
+
+    .navbar .items.v-class {
+        display: flex;
+    }
+
+    .main-page {
+        padding: 50px 20px;
+    }
+
+    .contact_sec form {
+        width: 90%;
+    }
+}

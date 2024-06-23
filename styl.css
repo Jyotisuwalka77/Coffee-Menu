@@ -1,0 +1,231 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #3e1d13;
+}
+
+a {
+    text-decoration: none;
+    color: #281914;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h3, h4, h5, p, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(233, 222, 222);
+    color: #3e1d13;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+}
+
+.navbar .items {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .items li a {
+    color: #3e1d13;
+    font-size: 1em;
+}
+
+.navbar .burger {
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+}
+
+/* Main page */
+.main-page {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url(https://img.freepik.com/premium-photo/dropping-coffee-beans-coffee-cup_28943-642.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.main-page .main_pg h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Stories Section */
+.stories {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.stories h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.story {
+    margin-bottom: 30px;
+}
+
+.story h2 {
+    font-size: 1.8em;
+    color: #3e1d13;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-size: 1em;
+    color: #6d4c41;
+    line-height: 1.6;
+}
+
+/* User Testimonials Section */
+.types {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.types h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.types .type_p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #5b392d;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.user_box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user_box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.user_box p {
+    font-size: 1em;
+    color: #6d4c41;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.user_box i {
+    margin: 5px;
+    color: #6d4c41;
+    cursor: pointer;
+}
+
+/* Blog Type Section */
+.blog_type {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.blog_type .blog_box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog_type .blog_boxes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.blog_type .blog_boxes h1 {
+    font-size: 2.5em;
+    color: #8d5524;
+}
+
+.blog_type .blog_boxes h2 {
+    font-size: 1.2em;
+    color: #6d4c41;
+}
+
+/* Footer */
+.footer {
+    background-color: #8d5524;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .items {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .burger {
+        display: block;
+    }
+
+    .navbar .items.v-class {
+        display: flex;
+    }
+
+    .main-page {
+        padding: 50px 20px;
+    }
+
+    .blog, .blog_box {
+        flex-direction: column;
+    }
+
+    .user_box, .blog_boxes {
+        width: 90%;
+    }
+}

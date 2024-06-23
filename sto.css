@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #3e1d13;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #281914;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Coffee Stories Section */
+.stories {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff8f5;
+}
+
+.stories h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8d5524;
+}
+
+.story {
+    margin-bottom: 40px;
+}
+
+.story img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.story h2 {
+    font-size: 2em;
+    color: #8d5524;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-size: 1.2em;
+    color: #5b392d;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stories {
+        padding: 30px 15px;
+    }
+
+    .stories h1 {
+        font-size: 2em;
+    }
+
+    .story h2 {
+        font-size: 1.5em;
+    }
+
+    .story p {
+        font-size: 1em;
+    }
+}
